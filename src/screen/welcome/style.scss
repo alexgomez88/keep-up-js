@@ -1,0 +1,50 @@
+.welcome-page {
+  display: flex;
+
+  nav {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px;
+    grid-gap: 10px;
+
+    .item-menu {
+      position: relative;
+      display: flex;
+      box-shadow: #2227 8px 8px 8px;
+      transition: all 0.4s ease-in;
+      z-index: 1;
+      color: #ccc;
+
+      .full-icon {
+        margin: auto;
+        font-size: 100px;
+      }
+
+      header {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: #222a;
+        padding: 5px 15px;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+        z-index: 2;
+      }
+
+      &:nth-child(1) {
+        background-color: #a6a602;
+      }
+      &:nth-child(2) {
+        background-color: #0202a6;
+      }
+      &:nth-child(3) {
+        background-color: #a60202;
+      }
+    }
+  }
+}

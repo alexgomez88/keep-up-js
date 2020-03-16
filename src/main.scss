@@ -1,9 +1,15 @@
+@import './fonts.scss';
+
+:root{
+  font-family: 'Nunito';
+}
+
 html, body {
   margin: 0;
   padding: 0;
 }
 
-#root{
+#root, .screen{
   position: absolute;
   top: 0;
   left: 0;
